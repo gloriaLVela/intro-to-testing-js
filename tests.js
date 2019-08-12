@@ -37,9 +37,15 @@ describe('sayHello', function() {
     it('should return a string when called', function() {
         expect(typeof sayHello()).toBe("string");
     });
-    // it('should return the string "Hello, World!" when executed', function() {
-    //     expect(sayHello()).toBe("Hello, World!");
-    // });
+    it('should return the string "Hello, Jane!" when executed', function() {
+        expect(sayHello("Jane")).toBe("Hello, Jane!");
+    });
+    it('should return the string "Hello, Alex!" when executed', function() {
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
+    });
+    it('should return the string "Hello, Pat!" when executed', function() {
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
+    });
     // it("should never return 'undefined' when called", function() {
     //     expect(sayHello()).not.toBe(undefined);
     // });
@@ -84,7 +90,8 @@ describe('sayHello', function() {
 
  /**
  Exercise #3 - Add a test to confirm actual vs. expected output.
- Step 1: How that the function exists and returns the right data type, let's add our first realistic assertion. In tests.js, assert that sayHello("Jane") returns "Hello, Jane!". Our first test should be super simple and super small.
+ Step 1: How that the function exists and returns the right data type, let's add our first realistic assertion.
+  In tests.js, assert that sayHello("Jane") returns "Hello, Jane!". Our first test should be super simple and super small.
  Step 2: Run all tests and make sure that this newly added test is red.
  Step 3: If the test wants us to return "Hello, Jane!" then literally write return "Hello, Jane!"; because that's the simplest way to green a test looking for "Hello, Jane!".
  Step 4: Run all tests. They should all be green at this point.
@@ -96,7 +103,10 @@ describe('sayHello', function() {
  Exercise #4 Add another small, simple test
  Step 1: In tests.js, assert that sayHello("Alex") returns "Hello, Alex!". Our first test should be super simple and super small. This means that our next test should look like expect(sayHello("Alex")).toBe("Hello, Alex!").
  Step 2: Run all tests and make sure that this newly added test is red.
- Step 3: It's challenging not to jump to the "correct" answer already, but let's stay close to the TDD method. Write just enough code to green the test. This means making sure that the sayHello function definition inside of code.js takes an an input argument. If input === "Alex", then we return "Hello, Alex!" else return "Hello, Jane!". Don't get too fancy. A cornerstone of TDD is refactoring only once you have a handful of green tests, not just one or two with new inputs.
+ Step 3: It's challenging not to jump to the "correct" answer already, but let's stay close to the TDD method.
+  Write just enough code to green the test. This means making sure that the sayHello function definition inside of code.js takes an an input argument.
+  If input === "Alex", then we return "Hello, Alex!" else return "Hello, Jane!". Don't get too fancy.
+  A cornerstone of TDD is refactoring only once you have a handful of green tests, not just one or two with new inputs.
  Step 4: Run all tests, expecting that all are now green. Does each test turn green? If so, then we can proceed. We can't refactor unless we have greened a test, even with a hard-coded implementation.
  Step 5: If you feel the urge to refactor already, hang on! Let's add one more test!
  Step 6: Repeat the TDD cycle, so let's add another test in the next exercise.**/

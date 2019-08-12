@@ -8,6 +8,6 @@ function sum(a, b) {
     return a + b;
 }
 
-function sayHello(){
-return "";
+function sayHello(input){
+    return "Hello, " + input + "!";
 }
