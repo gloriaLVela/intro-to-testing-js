@@ -309,7 +309,7 @@ describe('isEven', function() {
  Commit your work to git and push to GitHub before moving forward.
  **/
 
-// Unit test for isEven function
+// Unit test for isVowel function
 describe('isVowel', function() {
     it('should be a defined function', function() {
         expect(typeof isVowel).toBe('function');
@@ -359,3 +359,32 @@ describe('isVowel', function() {
  Repeat until the tests are robust and the function works as intented.
  Commit your work to git and push to GitHub.
  **/
+
+// Unit test for isVowel function
+describe('isVowel', function() {
+    it('should be a defined function', function() {
+        expect(typeof isVowel).toBe('function');
+    });
+    // it('should return true a', function() {
+    //     expect(isVowel("a")).toBe(true);
+    // });
+    // it('should return true A', function() {
+    //     expect(isVowel("A")).toBe(true);
+    // });
+    // it('should return false', function() {
+    //     expect(isVowel("y")).toBe(false);
+    // });
+    // it('should return false', function() {
+    //     expect(isVowel(4)).toBe(false);
+    // });
+    // it('should return false', function() {
+    //     expect(isVowel(true)).toBe(false);
+    // });
+    // it('should return false', function() {
+    //     expect(isVowel(false)).toBe(false);
+    // });
+    // it('should return false', function() {
+    //     expect(isVowel("b")).toBe(false);
+    // });
+
+});
