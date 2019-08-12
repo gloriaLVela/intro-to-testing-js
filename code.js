@@ -18,7 +18,14 @@ function isNumeric(input) {
 
 function isFive(input) {
     if (typeof input === "string" || typeof input === "boolean") return false;
-    // if (!isNumeric(input)) return false;
+    if (!isNumeric(input)) return false;
     if (parseFloat(input) === 5) return true;
     return false;
+}
+
+
+function isEven(input) {
+    if (typeof input === "string" || typeof input === "boolean" || input == Infinity) return false;
+    if (!isNumeric(input)) return false;
+    return (parseFloat(input)%2 === 0)
 }
