@@ -27,5 +27,15 @@ function isFive(input) {
 function isEven(input) {
     if (typeof input === "string" || typeof input === "boolean" || input == Infinity) return false;
     if (!isNumeric(input)) return false;
-    return (parseFloat(input)%2 === 0)
+    return (parseFloat(input) % 2 === 0)
+}
+
+function isVowel(input) {
+    let vowelArray = ["a", "e", "i", "o", "u"];
+    // console.log(input);
+    if (typeof input != "string" || typeof input === "boolean" || input == Infinity) return false;
+    // if (input.toLowerCase() === "a" || input === 4) return false;
+    // console.log(input);
+    // console.log(vowelArray.indexOf(input.toLowerCase()) >= 0);
+    return vowelArray.indexOf(input.toLowerCase()) >= 0;
 }
