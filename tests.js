@@ -67,7 +67,9 @@ describe('sayHello', function() {
  Now, type git status. You should see file names in green. This means that the files are ready for commit.
  Next, type git commit -m "add the first test and solution for intro-to-testing"
  Type git status, again, to make sure that all files are added and committed.
- Finally, push your work by running git push. Pushing uploads your new commits to your remote repository, meaning your own fork on GitHub.**/
+ Finally, push your work by running git push. Pushing uploads your new commits to your remote repository, meaning your own fork on GitHub.
+ Test
+ **/
 
 /**
  Exercise #2 Ensure our function returns the right data type.
