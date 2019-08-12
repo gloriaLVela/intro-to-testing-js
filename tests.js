@@ -30,6 +30,20 @@ describe('sum', function(){
 });
 
 // Unit test for sayHello function
+describe('sayHello', function() {
+    it('should be a defined function', function() {
+        expect(typeof sayHello).toBe('function');
+    });
+    // it('should return a string when called', function() {
+    //     expect(typeof sayHello()).toBe("string");
+    // });
+    // it('should return the string "Hello, World!" when executed', function() {
+    //     expect(sayHello()).toBe("Hello, World!");
+    // });
+    // it("should never return 'undefined' when called", function() {
+    //     expect(sayHello()).not.toBe(undefined);
+    // });
+});
 /***
 
  Let's Test Drive a sayHello function
@@ -53,7 +67,9 @@ describe('sum', function(){
  Now, type git status. You should see file names in green. This means that the files are ready for commit.
  Next, type git commit -m "add the first test and solution for intro-to-testing"
  Type git status, again, to make sure that all files are added and committed.
- Finally, push your work by running git push. Pushing uploads your new commits to your remote repository, meaning your own fork on GitHub.
+ Finally, push your work by running git push. Pushing uploads your new commits to your remote repository, meaning your own fork on GitHub.**/
+
+/**
  Exercise #2 Ensure our function returns the right data type.
  New tests will each have their own expect, it, the describe
  Step 1: The smallest possible test, now that the function exists, is to ensure that calling the function gives us a string. Inside of tests.js, add an assertion to sayHello that it "should return a string when called.". The test should look similar to expect(typeof sayHello()).toBe("string")
@@ -62,7 +78,9 @@ describe('sum', function(){
  Step 4: Now, run all the tests to ensure that the previously red test is now turned green by our impelementation.
  Step 5: There's nothing to refactor.
  Step 6: Repeat (Repeat the process by moving to build the next, small test)
- Always: Add, commit, and push your work to GitHub.
+ Always: Add, commit, and push your work to GitHub.**/
+
+ /**
  Exercise #3 - Add a test to confirm actual vs. expected output.
  Step 1: How that the function exists and returns the right data type, let's add our first realistic assertion. In tests.js, assert that sayHello("Jane") returns "Hello, Jane!". Our first test should be super simple and super small.
  Step 2: Run all tests and make sure that this newly added test is red.
@@ -70,13 +88,18 @@ describe('sum', function(){
  Step 4: Run all tests. They should all be green at this point.
  Step 5: It's too soon to refactor.
  Step 6: Repeat step means to add another test, so let's move to the next exercise.
+  **/
+
+ /**
  Exercise #4 Add another small, simple test
  Step 1: In tests.js, assert that sayHello("Alex") returns "Hello, Alex!". Our first test should be super simple and super small. This means that our next test should look like expect(sayHello("Alex")).toBe("Hello, Alex!").
  Step 2: Run all tests and make sure that this newly added test is red.
  Step 3: It's challenging not to jump to the "correct" answer already, but let's stay close to the TDD method. Write just enough code to green the test. This means making sure that the sayHello function definition inside of code.js takes an an input argument. If input === "Alex", then we return "Hello, Alex!" else return "Hello, Jane!". Don't get too fancy. A cornerstone of TDD is refactoring only once you have a handful of green tests, not just one or two with new inputs.
  Step 4: Run all tests, expecting that all are now green. Does each test turn green? If so, then we can proceed. We can't refactor unless we have greened a test, even with a hard-coded implementation.
  Step 5: If you feel the urge to refactor already, hang on! Let's add one more test!
- Step 6: Repeat the TDD cycle, so let's add another test in the next exercise.
+ Step 6: Repeat the TDD cycle, so let's add another test in the next exercise.**/
+
+ /**
  Exercise #5 One more test before refactoring...
  Step 1: Add another (tiny) assertion! In tests.js, assert that sayHello("Pat") returns "Hello, Pat!". Since our tests should be super simple, the assertion should be expect(sayHello("Pat")).toBe("Hello, Pat!")
  Step 2: Run all tests and make sure that this newly added test is red and failing.
@@ -91,11 +114,16 @@ describe('sum', function(){
  This may feel slow, but each new test cycle should only take 2-3 minutes, if not shorter!
  Since our goal is to have a sayHello function that says hello to any input string, then adding a new conditional for each input is not scalable.
  In the TDD approach, refactoring is only possible if you have enough tests and enough code that all the tests are green. In this way, your tests provide a target for the refactor. If your refactoring fails tests that
+  **/
+
+ /**
  Exercise #6 Implement the refactor!
  Inside sayHello in code.js, what's a change you can identify that will improve the overall functioning of this function?
  Can you get the implmentation of sayHello down to a function with only one line of code inside?
  If we have return "Hello, " + input + "!";, does this work for all names?
- Does this bring up any other issues with other inputs?
+ Does this bring up any other issues with other inputs?**/
+
+ /**
  Exercise #7 Add, commit, and push your work to GitHub.
  "If your code ain't checked-in to source control, then it doesn't exist."
  In your terminal, ensure that the pwd command shows that you're in the directory for this project.
@@ -104,7 +132,9 @@ describe('sum', function(){
  Now, type git status. You should see file names in green. This means that the files are ready for commit.
  Next, type git commit -m "add tests and ability to say 'hello' to any input."
  Type git status, again, to make sure that all files are added and committed.
- Finally, push your work with git push.
+ Finally, push your work with git push. **/
+
+ /**
  Exercise #8 "Repeat" step (where we look for additional tests to add)
  First, in tests.js, add expect(sayHello()).toBe("Hello, World!"). Then refresh report.html to see the failing test.
  Follow that by adding just enough code inside of the sayHello function code.js to green that latest test. Recommend checking if the input variable's value is undefined.
@@ -119,7 +149,10 @@ describe('sum', function(){
  the input is an empty string like ""?
  the input is a number like 2.3?
  the input is a number inside a string like "5"?
- the input is another data type like an array, object, or function?
+ the input is another data type like an array, object, or function?**/
+
+
+ /**
  Exercise #9 Add, commit, and push your work to GitHub (make this a habit)
  "If your code ain't checked-in to source control, then it doesn't exist."
  In your terminal, ensure that the pwd command shows that you're in the directory for this project.

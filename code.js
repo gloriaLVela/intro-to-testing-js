@@ -7,3 +7,7 @@ function sum(a, b) {
     if (typeof a === "string" || typeof b === "string") return false;
     return a + b;
 }
+
+function sayHello(){
+
+}
