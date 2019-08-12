@@ -46,10 +46,36 @@ describe('sayHello', function() {
     it('should return the string "Hello, Pat!" when executed', function() {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
-    // it("should never return 'undefined' when called", function() {
-    //     expect(sayHello()).not.toBe(undefined);
-    // });
+    it("should never return 'undefined' when called", function() {
+        expect(sayHello()).not.toBe(undefined);
+    });
 });
+
+// Unit test for sayHello function
+describe('sayHello', function() {
+    it('should be a defined function', function() {
+        expect(typeof sayHello).toBe('function');
+    });
+    it('should return a string when called', function() {
+        expect(typeof sayHello()).toBe("string");
+    });
+    it('should return the string "Hello, Jane!" when executed', function() {
+        expect(sayHello("Jane")).toBe("Hello, Jane!");
+    });
+    it('should return the string "Hello, Alex!" when executed', function() {
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
+    });
+    it('should return the string "Hello, Pat!" when executed', function() {
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
+    });
+    it("should never return 'undefined' when called", function() {
+        expect(sayHello()).not.toBe(undefined);
+    });
+
+
+});
+
+
 /***
 
  Let's Test Drive a sayHello function
@@ -131,7 +157,7 @@ describe('sayHello', function() {
  /**
  Exercise #6 Implement the refactor!
  Inside sayHello in code.js, what's a change you can identify that will improve the overall functioning of this function?
- Can you get the implmentation of sayHello down to a function with only one line of code inside?
+ Can you get the implementation of sayHello down to a function with only one line of code inside?
  If we have return "Hello, " + input + "!";, does this work for all names?
  Does this bring up any other issues with other inputs?**/
 
@@ -189,6 +215,36 @@ describe('sayHello', function() {
  What about if we pass in the string "5"? Do you want isFive to return true for that?
  If so, write the test, ensure that the test is failing, and then write the implementation
  Commit your work to git and push to GitHub before moving forward.
+ **/
+
+// Unit test for isFive function
+describe('isFive', function() {
+    it('should be a defined function', function() {
+        expect(typeof isFive).toBe('function');
+    });
+    it("should never return 'undefined' when called", function() {
+        expect(isFive()).not.toBe(undefined);
+    });
+    it('should return false', function() {
+        expect(isFive("5")).toBe(false);
+    });
+    it('should return false', function() {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return false', function() {
+        expect(isFive(10)).toBe(false);
+    });
+    it('should return false', function() {
+        expect(isFive(6)).toBe(false);
+    });
+    it('should return false', function() {
+        expect(isFive(9)).toBe(false);
+    });
+
+
+});
+
+/**
  Exercise #11 TDD process for testing and creating an isEven function
  Start with the smallest tests first. Assert that the function is defined.
  Write just enough code to green the test
