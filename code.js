@@ -41,5 +41,7 @@ function isVowel(input) {
 }
 
 function add(num1, num2){
-return num1 + num2;
+    if(!isNumeric(num1) || !isNumeric(num2)) return NaN;
+    // if (num1 === "5"  && num2 === 6) return 11;
+return +num1 + +num2;
 }

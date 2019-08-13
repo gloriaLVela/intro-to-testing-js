@@ -378,26 +378,20 @@ describe('add', function() {
         expect(add("5",6)).toBe(11);
     });
     // add("-4", "10") returns 6
+    it('should return 6', function(){
+        expect(add("-4", "10")).toBe(6);
+    });
     // add("banana", "split") returns NaN
+    it('should return NaN', function(){
+        expect(isNaN(add("banana", "split"))).toBe(true);
+    });
     // add(2, "apples") returns NaN
+    it('should return NaN', function(){
+        expect(isNaN(add("apples"))).toBe(true);
+    });
     // add() returns NaN
-    // it('should return true A', function() {
-    //     expect(isVowel("A")).toBe(true);
-    // });
-    // it('should return false', function() {
-    //     expect(isVowel("y")).toBe(false);
-    // });
-    // it('should return false', function() {
-    //     expect(isVowel(4)).toBe(false);
-    // });
-    // it('should return false', function() {
-    //     expect(isVowel(true)).toBe(false);
-    // });
-    // it('should return false', function() {
-    //     expect(isVowel(false)).toBe(false);
-    // });
-    // it('should return false', function() {
-    //     expect(isVowel("b")).toBe(false);
-    // });
+    it('should return NaN', function(){
+        expect(isNaN(add())).toBe(true);
+    });
 
 });
