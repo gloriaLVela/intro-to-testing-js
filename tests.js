@@ -360,14 +360,27 @@ describe('isVowel', function() {
  Commit your work to git and push to GitHub.
  **/
 
-// Unit test for isVowel function
-describe('isVowel', function() {
+// Unit test for add function
+describe('add', function() {
     it('should be a defined function', function() {
-        expect(typeof isVowel).toBe('function');
+        expect(typeof add).toBe('function');
     });
-    // it('should return true a', function() {
-    //     expect(isVowel("a")).toBe(true);
-    // });
+    // add(2, 3) returns 5
+    it('should return 5', function() {
+        expect(add(2,3)).toBe(5);
+    });
+    // add(-3, -9) returns -12
+    it('should return -12', function(){
+        expect(add(-3, -9)).toBe(-12);
+    });
+    // add("5", 6) returns 11
+    it('should return 11', function(){
+        expect(add("5",6)).toBe(11);
+    });
+    // add("-4", "10") returns 6
+    // add("banana", "split") returns NaN
+    // add(2, "apples") returns NaN
+    // add() returns NaN
     // it('should return true A', function() {
     //     expect(isVowel("A")).toBe(true);
     // });

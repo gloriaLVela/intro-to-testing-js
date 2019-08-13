@@ -39,3 +39,7 @@ function isVowel(input) {
     // console.log(vowelArray.indexOf(input.toLowerCase()) >= 0);
     return vowelArray.indexOf(input.toLowerCase()) >= 0;
 }
+
+function add(num1, num2){
+return num1 + num2;
+}
